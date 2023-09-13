@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 100;
+    
+}
+
+header {
+    margin-top: 5rem;
+}
+
+main {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+button {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+#countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 2.5rem auto;
+    color: rgb(95, 95, 158);
+}
+
+#countdown > div {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid rgb(95, 95, 158);
+}
+#countdown .time {
+    font-size: 2.5rem;
+}
+iframe {
+    position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: -1;
+}  
+a {
+	border: 1px solid white;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: white;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.test1 {
+	width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   background-color: #04AA6D;
+    background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+

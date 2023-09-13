@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta charset="utf-8">
+		<title>project sxolhs</title>
+		
+			
+	</head>
+	<body>
+	<form>
+	<div>
+	<label>'Ονομα </label>
+	<input type="text" id="a1" required> 
+	</div>
+	<div>
+	<label>Επώνυμο </label>
+	<input type="text" id="a2" required>
+	</div>
+	<div>
+	<label>Οδός </label>
+	<input type="text" id="a3" required>
+	</div>
+	<div>
+	<label>Αριθμός </label>
+	<input type="tel" id="a4" required>
+	</div>
+	<div>
+	<label>Πόλη </label>
+	<input type="text" id="a5" required>
+	</div>
+	<div>
+	<label>Περιοχή </label>
+	<input type="text" id="a6" required>
+	</div>
+	<div>
+	<label>Οικ.κατάσταση </label>
+	<select id="a7" onchange="test();">
+		<option value="1"> eggamos</option>
+		<option value="2"> agamos</option>
+	</select>
+	</div>
+	<div>
+	<label>Τέκνα </label>
+	<input type="checkbox" id="a8" onchange="changeA8()" value="1" required>
+	</div>
+	<div id="showA9" style="display: none">
+		<label>Αριθμός τέκνων</label>
+		<input type="number" required min="0" id="a9">
+	</div>
+	<div>
+	<label>Χρ.γέννησης </label>
+	<input type="date" id="a10" required>
+	</div>
+	<div>
+	<label>Φύλο </label>
+	<select id="a11" onchange="changeA11();">
+		<option value="1"> andras</option>
+		<option value="2"> ginaika</option>
+	</select>
+	</div>
+	<div id="showA12">
+	<label>Στρ.υποχρεώσεις </label>
+	<select id="a12" onchange="changeA12()">
+		<option value="1"> nai</option>
+		<option value="2"> oxi</option>
+	</select>
+	</div>
+	<div id="showA13">
+	<label>'Ετος.απολ.στ</label>
+	<input type="date" required>
+	</div>
+	<div>
+	<label>Πιστωτικές κάρτες</label>
+	<input type="text" required>
+	</div>
+	<div>
+	<label>Δάνειο</label>
+	<input type="checkbox" id=a15 required>
+	</div>
+	<div >
+	<label>Απόφοιτος</label>
+	<select id="a16" >
+		<option value="1"> gumnasio</option>
+		<option value="2"> lukeio</option>
+		<option value="3"> tei</option>
+		<option value="4"> aei</option>
+	</select>
+	</div>
+	<button> Αποστολή</button>
+
+
+<script>
+
+
+function test() {
+	console.log(document.getElementById("a7").value);
+}
+
+function changeA12() {
+console.log(document.getElementById("a12").value)
+	if (document.getElementById("a12").value == "2") {
+		document.getElementById("showA13").style.display = "none";
+	} else {
+		document.getElementById("showA13").style.display = "block";
+	}
+}
+
+
+function changeA11() {
+
+	if (document.getElementById("a11").value == "2") {
+		
+		document.getElementById("showA12").style.display = "none";
+		document.getElementById("showA13").style.display = "none";
+	} else {
+		document.getElementById("showA12").style.display = "block";
+		document.getElementById("showA13").style.display = "block";
+	}
+}
+
+function changeA8() {
+	console.log(document.getElementById("a8").checked);
+	
+	if (document.getElementById("a8").checked) {
+	document.getElementById("showA9").style.display = "block";
+	} else {
+	document.getElementById("showA9").style.display = "none";
+	}
+	
+}
+
+</script>
+
+</body>
+</html>
